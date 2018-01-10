@@ -9,6 +9,22 @@ public class Service {
 	private Map<Integer, Movie> movieMap;
 	private static int count = 0;
 
+	public Map<Integer, Movie> getMovieMap() {
+		return movieMap;
+	}
+
+	public void setMovieMap(Map<Integer, Movie> movieMap) {
+		this.movieMap = movieMap;
+	}
+
+	public static int getCount() {
+		return count;
+	}
+
+	public static void setCount(int count) {
+		Service.count = count;
+	}
+
 	public Service() {
 		movieMap = new HashMap<Integer, Movie>();
 	}
